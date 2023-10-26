@@ -63,18 +63,23 @@ nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		height: 5em;
 
 		& ul.menu {
 			display: flex;
-			margin-top: 2em;
-			background-color: red;
-
+			
 			& li {
+				margin-right: 2em;
 
 				& a {
+					
+					color: #fff;
+					text-decoration: none;
+					text-transform: uppercase;
+					transition: .3s;
 
 					&:hover {
-
+						color: #ff6760;
 					}
 				}
 			}
