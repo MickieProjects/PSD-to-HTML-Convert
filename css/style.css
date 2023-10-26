@@ -51,3 +51,33 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
+/************** Nav **************/
+nav {
+	height: 5em;
+	background: #333;
+
+	& .nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& ul.menu {
+			display: flex;
+			margin-top: 2em;
+			background-color: red;
+
+			& li {
+
+				& a {
+
+					&:hover {
+
+					}
+				}
+			}
+		}
+	}
+}
