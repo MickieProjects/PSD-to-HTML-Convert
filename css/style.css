@@ -95,6 +95,7 @@ nav {
 	}
 }
 
+
 /************** Header-Section **************/
 .header-webpaint {
 	padding: 4em 0;
@@ -160,6 +161,7 @@ nav {
 	}	
 }
 
+
 /************** Our Featured **************/
 .ourfeatured {
 	width: 100%;
@@ -180,10 +182,101 @@ nav {
 		}
 	}
 
+	& .center {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
 	& ul.ourportfolio {
+		margin-top: 3em;
 		display: flex;
 		justify-content: space-between;
-		width: 25%;
-		background-color: red;
+		width: 35%;
+
+		& a {
+			display: inline-block;
+
+			text-decoration: none;
+			text-transform: uppercase;
+			border-radius: 5px;
+			padding: .5em;
+
+			color: #fff;
+			background: #ff6760;
+
+			transition: .3s;
+
+			&:hover {
+				background: #333;
+			}
+		}
+	}
+
+	& .ourportfolio-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 1em;
+
+		margin-top: 2em;
+	}
+}
+
+
+/************** Footer **************/
+footer {
+	width: 100%;
+	height: auto;
+	color: #fff;
+	text-align: center;
+
+	& .footer-top {
+		background: #313131;
+		padding: 3em 0;
+
+		& h2 {
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+		& .center {
+			display: flex;
+			justify-content: center;
+
+			& .footer-address {
+				display: flex;
+				justify-content: space-between;
+				margin-top: .5em;
+				font-size: .9em;
+				width: 30%;
+			}
+		}
+
+		& .footer-top-social {
+			display: flex;
+			margin-top: 1em;
+			width: 8%;
+			justify-content: space-between;
+
+			& i {
+				font-size: 1.2em;
+				color: #fff;
+
+				&:hover {
+					color: #ff6760;
+					transition: .3s;
+				}
+			}
+
+		}
+	}
+
+	& .footer-bottom {
+		background: #232323;
+		padding: 1.5em 0;
+	}
+
+	& p {
+		color: #ccc;
 	}
 }
