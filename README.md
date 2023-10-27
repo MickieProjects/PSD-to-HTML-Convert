@@ -2,5 +2,10 @@
 
 ![รูปภาพ](/LandingPage.png)
 
-### Responsive WebSite
+
+### Key Function
+-   Mixitup
+
+
+### Responsive Website
 -   Display 480px
